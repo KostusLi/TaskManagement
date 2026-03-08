@@ -1,4 +1,6 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+using TaskManager.Data;
 using TaskManager.DTOs.Tasks;
 using TaskManager.Services.Interfaces;
 
@@ -6,48 +8,55 @@ namespace TaskManager.Services.Implementations
 {
     public class TaskService : ITaskService
     {
-        private readonly List<TaskItem> _tasks = new();
+        private readonly AppDbContext _context;
 
-        public Task<TaskDto> CreateAsync(CreateTaskDto dto)
+        public TaskService(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<TaskDto> CreateAsync(CreateTaskDto dto)
         {
             var task = new TaskItem(Guid.NewGuid(), dto.Title, dto.Description, dto.Status, dto.DueDate,dto.ProjectId, dto.AssignedUserId);
-            _tasks.Add(task);
-            return Task.FromResult(ToDto(task));
+            _context.Tasks.Add(task);
+            await _context.SaveChangesAsync();
+            return ToDto(task);
         }
 
-        public Task<TaskDto?> UpdateAsync(UpdateTaskDto dto, Guid id)
+        public async Task<TaskDto?> UpdateAsync(UpdateTaskDto dto, Guid id)
         {
-            int i = _tasks.FindIndex(t => t.Id == id);
-            if (i == -1)
-            {
-                return Task.FromResult<TaskDto?>(null);
-            }
-            _tasks[i].Title = dto.Title;
-            _tasks[i].Description = dto.Description;
-            _tasks[i].Status = dto.Status;
-            _tasks[i].DueDate = dto.DueDate;
-            _tasks[i].AssignedUserId = dto.AssignedUserId;
-            return Task.FromResult<TaskDto?>(ToDto(_tasks[i]));
+            var task = await _context.Tasks.FindAsync(id);
+            if (task == null)
+                return null;
+            task.Title = dto.Title;
+            task.Description = dto.Description;
+            task.Status = dto.Status;
+            task.DueDate = dto.DueDate;
+            task.AssignedUserId = dto.AssignedUserId;
+            await _context.SaveChangesAsync();
+            return ToDto(task);
         }
 
-        public Task<TaskDto?> GetByIdAsync(Guid id)
+        public async Task<TaskDto?> GetByIdAsync(Guid id)
         {
-            var task = _tasks.FirstOrDefault(t => t.Id == id);
-            if (task == null) return Task.FromResult<TaskDto?>(null);
-            return Task.FromResult<TaskDto?>(ToDto(task));
+            var task = await _context.Tasks.FindAsync(id);
+            if (task == null) return null;
+            return ToDto(task);
         }
 
-        public Task<List<TaskDto>> GetAllAsync()
+        public async Task<List<TaskDto>> GetAllAsync()
         {
-            return Task.FromResult(_tasks.Select(ToDto).ToList());
+            var tasks = await _context.Tasks.ToListAsync();
+            return tasks.Select(ToDto).ToList();
         }
 
-        public Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid id)
         {
-            var task = _tasks.FirstOrDefault(g => g.Id == id);
-            if (task == null) return Task.FromResult(false);
-            _tasks.Remove(task);
-            return Task.FromResult(true);
+            var task = await _context.Tasks.FindAsync(id);
+            if (task == null) return false;
+            _context.Tasks.Remove(task);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
         private static TaskDto ToDto(TaskItem task)

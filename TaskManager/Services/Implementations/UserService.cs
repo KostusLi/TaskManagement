@@ -1,4 +1,6 @@
 ﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+using TaskManager.Data;
 using TaskManager.DTOs.Users;
 using TaskManager.Services.Interfaces;
 
@@ -6,50 +8,55 @@ namespace TaskManager.Services.Implementations
 {
     public class UserService : IUserService
     {
-        private readonly List<User> _userContainer = new();
+        private readonly AppDbContext _context;
 
-        public Task<UserDto> CreateAsync(CreateUserDto dto)
+        public UserService(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<UserDto> CreateAsync(CreateUserDto dto)
         {
             var user = new User(Guid.NewGuid(), dto.Name, dto.Email);
-
-            _userContainer.Add(user);
-
-            return Task.FromResult(ToDto(user));
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return ToDto(user);
         }
 
-        public Task<UserDto?> UpdateAsync(UpdateUserDto dto, Guid id)
+        public async Task<UserDto?> UpdateAsync(UpdateUserDto dto, Guid id)
         {
-            var user = _userContainer.FirstOrDefault(u => u.Id == id);
-            if (user == null)
-                return Task.FromResult<UserDto?>(null);
-
+            var user =  await _context.Users.FindAsync(id);
+            if (user == null) return null;
             user.Name = dto.Name;
             user.Email = dto.Email;
-
-            return Task.FromResult<UserDto?>(ToDto(user));
+            await _context.SaveChangesAsync();
+            return ToDto(user);
         }
 
-        public Task<UserDto?> GetByIdAsync(Guid id)
+        public async Task<UserDto?> GetByIdAsync(Guid id)
         {
-            var user = _userContainer.FirstOrDefault(g => g.Id == id);
-            if (user == null) return Task.FromResult<UserDto?>(null);
-            return Task.FromResult<UserDto?>(ToDto(user));
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return null;
+            return ToDto(user);
         }
 
-        public Task<List<UserDto>> GetAllAsync()
+        public async Task<List<UserDto>> GetAllAsync()
         {
-            return Task.FromResult(_userContainer.Select(ToDto).ToList());
+            return (await _context.Users.ToListAsync())
+                .Select(ToDto)
+                .ToList();
         }
 
-        public Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid id)
         {
-            var user = _userContainer.FirstOrDefault(g => g.Id == id);
+            var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
-                return Task.FromResult(false);
+                return false;
             }
-            _userContainer.Remove(user);
-            return Task.FromResult(true);
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
         private static UserDto ToDto(User user)

@@ -1,47 +1,65 @@
 ﻿using Entities;
+using TaskManager.Data;
 using TaskManager.DTOs.Projects;
 using TaskManager.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace TaskManager.Services.Implementations
 {
     public class ProjectService : IProjectService
     {
-        private readonly List<Project> _projects = new();
+        private readonly AppDbContext _context;
 
-        public Task<ProjectDto> CreateAsync(CreateProjectDto dto)
+        public ProjectService(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<ProjectDto> CreateAsync(CreateProjectDto dto)
         {
             var project = new Project(Guid.NewGuid(), dto.Name, dto.Description, dto.OwnerUserId);
-            _projects.Add(project);
-            return Task.FromResult(ToDto(project));
+            _context.Projects.Add(project);
+            await _context.SaveChangesAsync();
+            return ToDto(project);
         }
 
-        public Task<ProjectDto?> UpdateAsync(UpdateProjectDto dto, Guid id)
+        public async Task<ProjectDto?> UpdateAsync(UpdateProjectDto dto, Guid id)
         {
-            var project = _projects.FirstOrDefault(p => p.Id == id);
-            if (project == null) return Task.FromResult<ProjectDto?>(null);
+            var project = await _context.Projects.FindAsync(id);
+
+            if (project == null)
+                return null;
+
             project.Name = dto.Name;
             project.Description = dto.Description;
-            return Task.FromResult<ProjectDto?>(ToDto(project));
+
+            await _context.SaveChangesAsync();
+
+            return ToDto(project);
         }
 
-        public Task<ProjectDto?> GetByIdAsync(Guid id)
+        public async Task<ProjectDto?> GetByIdAsync(Guid id)
         {
-            var project = _projects.FirstOrDefault(p => p.Id == id);
-            if (project == null) return Task.FromResult<ProjectDto?>(null);
-            return Task.FromResult<ProjectDto?>(ToDto(project));
+            var project = await _context.Projects.FindAsync(id);
+            if (project == null) return null;
+            return ToDto(project);
         }
 
-        public Task<List<ProjectDto>> GetAllAsync()
+        public async Task<List<ProjectDto>> GetAllAsync()
         {
-            return Task.FromResult(_projects.Select(p => ToDto(p)).ToList());
+            var projects = await _context.Projects.ToListAsync();
+            return projects.Select(ToDto).ToList();
         }
 
-        public Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid id)
         {
-            var project = _projects.FirstOrDefault(project => project.Id == id);
-            if (project == null) return Task.FromResult(false);
-            _projects.Remove(project);
-            return Task.FromResult(true);
+            var project =await  _context.Projects.FindAsync(id);
+            if (project == null) return false;
+
+            _context.Projects.Remove(project);
+            await _context.SaveChangesAsync();
+
+            return true;
         }
 
         private static ProjectDto ToDto(Project project)

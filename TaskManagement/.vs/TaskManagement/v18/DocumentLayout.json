@@ -1,0 +1,348 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\practiceCSharp\\TaskManagement\\TaskManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\entities\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\users\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\users\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\tasks\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\tasks\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\tasks\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\projects\\updateprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\projects\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\dtos\\projects\\createprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\enums\\tasksstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\services\\implementations\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACD8263-FB4B-4203-8878-74F428CBE11C}|..\\TaskManager\\TaskManager.csproj|d:\\practicecsharp\\taskmanagement\\taskmanager\\services\\implementations\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\TaskManager\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAABCwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T20:16:35.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "..\\TaskManager\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:07:04.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Controllers\\ProjectController.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "..\\TaskManager\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:51.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Users\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Users\\CreateUserDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Users\\CreateUserDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Users\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:45.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Entities\\Project.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Entities\\Project.cs",
+              "RelativeToolTip": "..\\TaskManager\\Entities\\Project.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA5wCYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T17:48:39.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Entities\\TaskItem.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Entities\\TaskItem.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Entities\\TaskItem.cs",
+              "RelativeToolTip": "..\\TaskManager\\Entities\\TaskItem.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAADwvzMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T18:59:38.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Entities\\User.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Entities\\User.cs",
+              "RelativeToolTip": "..\\TaskManager\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T18:54:24.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Program.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Program.cs",
+              "RelativeToolTip": "..\\TaskManager\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T16:00:56.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\TaskManager\\appsettings.json",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\appsettings.json",
+              "RelativeToolTip": "..\\TaskManager\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-08T17:43:00.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Users\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Users\\UpdateUserDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Users\\UpdateUserDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Users\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:45.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateTaskDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Tasks\\UpdateTaskDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Tasks\\UpdateTaskDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Tasks\\UpdateTaskDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Tasks\\UpdateTaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:44.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateProjectDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Projects\\UpdateProjectDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Projects\\UpdateProjectDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Projects\\UpdateProjectDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Projects\\UpdateProjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:42.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Projects\\ProjectDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Projects\\ProjectDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Projects\\ProjectDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Projects\\ProjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:41.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateProjectDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Projects\\CreateProjectDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Projects\\CreateProjectDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Projects\\CreateProjectDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Projects\\CreateProjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:39.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TaskDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Tasks\\TaskDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Tasks\\TaskDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Tasks\\TaskDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Tasks\\TaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:37.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateTaskDto.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Tasks\\CreateTaskDto.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\DTOs\\Tasks\\CreateTaskDto.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\DTOs\\Tasks\\CreateTaskDto.cs",
+              "RelativeToolTip": "..\\TaskManager\\DTOs\\Tasks\\CreateTaskDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:31.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TasksStatus.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Enums\\TasksStatus.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Enums\\TasksStatus.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Enums\\TasksStatus.cs",
+              "RelativeToolTip": "..\\TaskManager\\Enums\\TasksStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T19:06:14.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "..\\TaskManager\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAC0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T18:33:37.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Services\\Implementations\\TaskService.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Services\\Implementations\\TaskService.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Services\\Implementations\\TaskService.cs",
+              "RelativeToolTip": "..\\TaskManager\\Services\\Implementations\\TaskService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwBsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T18:06:14.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Services\\Implementations\\ProjectService.cs",
+              "RelativeDocumentMoniker": "..\\TaskManager\\Services\\Implementations\\ProjectService.cs",
+              "ToolTip": "D:\\practiceCSharp\\TaskManagement\\TaskManager\\Services\\Implementations\\ProjectService.cs",
+              "RelativeToolTip": "..\\TaskManager\\Services\\Implementations\\ProjectService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAywD0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T17:50:31.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
